@@ -301,11 +301,11 @@ fi
 if [ $i -eq 09 ]; then
   echo "[ Apt Eazy ]"
   echo "This Tool Has Every Program and Command a New Linux User Need to Enjoy The Linux Experience."
-  echo "-Version   : 1.4.2 Beta [  ]"
+  echo "-Version   : 1.5 [ Stable Edition ]"
   echo "-CodeName  : Psycho"
   echo "-Coded By  : Black.Hacker"
   echo "-Owened By : Dark Software Company"
-  echo "© 2017 Dark Software All Rights Reserved."
+  echo "© 2018 Dark Software All Rights Reserved."
   echo "-This Tool is Not for Sell."
   Back
   fi
