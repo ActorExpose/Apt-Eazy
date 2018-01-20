@@ -1,7 +1,2 @@
 theme: jekyll-theme-hacker
 show_downloads: true
-exclude:
-  - CNAME
-  - README
-  - design_old
-  - "*.BAK"
