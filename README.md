@@ -39,7 +39,7 @@ and you can install
  # How to install
  First you need a debian based linux distribution.
  
- `git clone https://github.com/BlackHacker511/Apt-Eazy.git && cd Apt-Eazy && ./aptz`
+ `git clone https://github.com/BlackHacker511/Apt-Eazy.git && cd Apt-Eazy && chmod +x aptz && ./aptz`
  
  # How to use
  after clonin the script you can run it using `./aptz`
