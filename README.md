@@ -47,9 +47,9 @@ and you can install
  after that it's eazy just operation number or ppa url.
  
  # Example
- 
+ ![Image of and example](https://github.com/BlackHacker511/Apt-Eazy/raw/master/2.png)
  
  # License
- © 2017 Dark Software All Rights Reserved.
+ © 2018 Dark Software All Rights Reserved.
  
  This Tool Open Source and it's Not for Sell.
