@@ -10,27 +10,24 @@ whith APTEazy you can
  [6] Remove a Software
  [7] Install Themes
 
-this tool have 
- [1] Gimp [ Last Stable Update ]
- [2] VLC
- [3] Skype
- [4] Dropbox
- [5] Google Chrome
- [6] LibreOffice [ Last Update ]
- [7] Stcer [ Ubuntu System Cleaner ]
- [8] Popcorn Time
- [9] Tor Browser
- [10] uGet [ Internet Download Manager for Linux ]
- [11] Gyazo [ Shutter Alternative ]
- [12] YouTube DL [ YouTube Downloader ]
- [13] Deluge [ Last Update - Torrent Clinet for Linux]
- [14] Sublime Text Editor
- [15] Spotify
- [16] Audacity
- [17] BlueGriffon [ Microsoft Expression Web Alternative ]
- [18] Master PDF Editor 4
- [19] f.lux 
- [20] Whatsie
- 
- 
-
+you can install
+ Gimp
+ VLC
+ Skype
+ Dropbox
+ Google Chrome
+ LibreOffice
+ Stcer
+ Popcorn Time
+ Tor Browser
+ uGet
+ Gyazo
+ YouTube DL
+ Deluge
+ Sublime Text Editor
+ Spotify
+ Audacity
+ BlueGriffon
+ Master PDF Editor 4
+ f.lux 
+ Whatsie
