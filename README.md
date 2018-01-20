@@ -1,4 +1,4 @@
-# Apt-Eazy | Shell script to manage apt-get
+# Apt-Eazy Shell script to manage apt-get
 
 Apt Mad Eazy - Tool Has Every Program and Command a New Linux User Need to Enjoy The Linux Experience
 
