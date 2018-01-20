@@ -1,4 +1,4 @@
-# Apt-Eazy | Shell script to manage apt-get for newbie
+# Apt-Eazy | Shell script to manage apt-get
 
 Apt Mad Eazy - Tool Has Every Program and Command a New Linux User Need to Enjoy The Linux Experience
 
@@ -47,7 +47,7 @@ and you can install
  
  # How to use
  
- after clonin the script you can run it using `./aptz`
+ after cloning the script you can run it using `./aptz`
  
  ![Image of the interface](https://github.com/BlackHacker511/Apt-Eazy/raw/master/1.png)
  
