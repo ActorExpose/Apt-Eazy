@@ -1,4 +1,4 @@
-Version 1.4.2 Beta
+Version 1.5 Stable
 [] New Programs Has Been Added
   [] Gyazo [ Shutter Alternative ]
   [] YouTube DL [ YouTube Downloader ]
