@@ -1,4 +1,5 @@
 # Apt-Eazy | Shell script to manage apt-get for newbie
+
 Apt Mad Eazy - Tool Has Every Program and Command a New Linux User Need to Enjoy The Linux Experience
 
 Created By : Black.Hacker
@@ -37,11 +38,13 @@ and you can install
  20. Whatsie
  
  # How to install
+ 
  First you need a debian based linux distribution.
  
  `git clone https://github.com/BlackHacker511/Apt-Eazy.git && cd Apt-Eazy && chmod +x aptz && ./aptz`
  
  # How to use
+ 
  after clonin the script you can run it using `./aptz`
  
  ![Image of the interface](https://github.com/BlackHacker511/Apt-Eazy/raw/master/1.png)
@@ -50,9 +53,11 @@ and you can install
  after that it's eazy just operation number or ppa url.
  
  # Example
+ 
  ![Image of and example](https://github.com/BlackHacker511/Apt-Eazy/raw/master/2.png)
  
  # License
+ 
  © 2018 Dark Software All Rights Reserved.
  
  This Tool Open Source and it's Not for Sell.
