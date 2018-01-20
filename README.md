@@ -1,6 +1,9 @@
 # Apt-Eazy | Shell script to manage apt-get for newbie
 Apt Mad Eazy - Tool Has Every Program and Command a New Linux User Need to Enjoy The Linux Experience
-Created By : Black.Hacker using bash script
+
+Created By : Black.Hacker
+
+using bash script
 
 With APTEazy you can
   1. Add a PPA
