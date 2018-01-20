@@ -33,17 +33,19 @@ And you can install
  18. f.lux 
  20. Whatsie
  
- # Why i made it ?
+ ## Why i made it ?
+ 
  will i made this script to help you install the softwares you need as a linux user and make manage you sources without breaking you system this is will help you make system safe and clean from unwanted files and packages.
  
- # Who am I ?
+ ### Who am I ?
+ 
  My name is : Black.Hacker << not my real name (:
  
  i'm CS Student and i love coding i'm an Ex BlackHat Hacker now am an Ethical Hacker
  
  i know Python basics,bash,.NET,PHP.Javascript basics,HTML
  
- # License
+ #### License
  
  © 2018 Dark Software All Rights Reserved.
  
