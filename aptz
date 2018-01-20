@@ -38,11 +38,7 @@ read -p "[-] Operation Number :" i
 
 
 if [ $i -eq 1 ]; then
- rm apt-eazy.sh
- wget http://localhost/apt-eazy.sh
- sudo cp apt-eazy.sh /usr/bin/aptz
- rm Version.txt
- Back
+git pull origin master
 fi
 
 if [ $i -eq 2 ]; then
