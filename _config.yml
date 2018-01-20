@@ -5,4 +5,3 @@ exclude:
   - README
   - design_old
   - "*.BAK"
-  - "_config.yml"
