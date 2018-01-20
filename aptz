@@ -1,0 +1,352 @@
+#!/bin/bash
+echo ""
+echo "                  APT-Eazy                   "
+echo "[ ========================================= ]"
+echo "|                                           |"
+echo "| Coded By : Black.Hacker                   |"
+echo "| Version  : 1.5 Stable [ Psycho ]          |"
+echo "| CodeName : aptpsycho                      |"
+echo "|                                           |"
+echo "|           Dark Software Company           |"
+echo "[ ========================================= ]"
+
+function CheckUpdate {
+currentversion="1.5.Stable"
+
+if [ -f "Version.txt" ]
+then
+    rm "Version.txt"
+    wget https://raw.githubusercontent.com/BlackHacker511/Apt-Eazy/master/Version.txt --quiet
+else
+    wget https://raw.githubusercontent.com/BlackHacker511/Apt-Eazy/master/Version.txt --quiet
+fi
+
+newversion=`cat Version.txt`
+sleep 5
+
+if [ $currentversion == $newversion ]; then
+echo  "No Update available."
+else 
+echo "[-] Update available"
+echo ""
+wget https://raw.githubusercontent.com/BlackHacker511/Apt-Eazy/master/Changelogs.txt --quiet
+cat "Changelogs.txt"
+echo ""
+echo "[1] Update Now"
+echo "[2] Go Back"
+read -p "[-] Operation Number :" i
+
+
+if [ $i -eq 1 ]; then
+ rm apt-eazy.sh
+ wget http://localhost/apt-eazy.sh
+ sudo cp apt-eazy.sh /usr/bin/aptz
+ rm Version.txt
+ Back
+fi
+
+if [ $i -eq 2 ]; then
+ Back
+fi
+
+fi
+}
+
+function StartProject {
+echo ""
+echo "Select an operation :"
+echo " [1] Add a PPA"
+echo " [2] Remove a PPA"
+echo " [3] Update your APT Repository"
+echo " [4] Upgrade your system"
+echo " [5] Install a Software"
+echo " [6] Remove a Software"
+echo " [7] Install Themes"
+echo ""
+echo " [09] About"
+echo " [99] Check for update"
+echo " [0] Exit"
+echo ""
+read -p " [-] Operation Number : " i
+
+if [ $i -eq 1 ]; then
+ read -p " -PPA : " i2
+ sudo add-apt-repository $i2 
+ Back
+fi
+
+if [ $i -eq 2 ]; then
+ read -p " -PPA : " i2
+ sudo add-apt-repository -r $i2 
+ Back
+fi
+
+if [ $i -eq 3 ]; then
+ sudo apt-get update
+ Back
+fi
+
+if [ $i -eq 4 ]; then
+ sudo apt-get upgrade
+ Back
+fi
+
+if [ $i -eq 5 ]; then
+ echo ""
+ echo " [1] Populer Software"
+ echo " [2] By Name"
+ echo ""
+ read -p " [-] Operation Number : " a1
+ 
+if [ $a1 -eq 1 ]; then
+  echo ""
+  echo " [1] Gimp [ Last Stable Update ]"
+  echo " [2] VLC"
+  echo " [3] Skype"
+  echo " [4] Dropbox"
+  echo " [5] Google Chrome"
+  echo " [6] LibreOffice [ Last Update ]"
+  echo " [7] Stcer [ Ubuntu System Cleaner ]"
+  echo " [8] Popcorn Time"
+  echo " [9] Tor Browser"
+  echo " [10] uGet [ Internet Download Manager for Linux ]"
+  echo " [11] Gyazo [ Shutter Alternative ]"
+  echo " [12] YouTube DL [ YouTube Downloader ]"
+  echo " [13] Deluge [ Last Update - Torrent Clinet for Linux]"
+  echo " [14] Sublime Text Editor"
+  echo " [15] Spotify"
+  echo " [16] Audacity"
+  echo " [17] BlueGriffon [ Microsoft Expression Web Alternative ]"
+  echo " [18] Master PDF Editor 4"
+  echo " [19] f.lux "
+  echo " [20] Whatsie"
+  echo ""
+  read -p " [-] Software Number : " i3
+  
+  if [ $i3 -eq 1 ]; then
+   sudo add-apt-repository ppa:otto-kesselgulasch/gimp && sudo apt-get update && sudo apt-get install gimp
+  fi
+  
+  if [ $i3 -eq 2 ]; then
+   sudo apt-get install vlc
+  fi
+   
+  if [ $i3 -eq 3 ]; then
+   sudo wget https://go.skype.com/skypeforlinux-64.deb
+   sudo dpkg -i skypeforlinux*
+  fi
+  
+  if [ $i3 -eq 4 ]; then
+   i7=`uname -m`
+   amd64=x86_64
+  if [ $i7 == "x86_64" ]; then
+   wget https://www.dropbox.com/download?dl=packages/ubuntu/dropbox_2015.10.28_amd64.deb
+   dpkg -i dropbox*
+   else
+    wget https://www.dropbox.com/download?dl=packages/ubuntu/dropbox_2015.10.28_i386.deb
+    dpkg -i dropbox*
+   fi
+  fi
+  
+    if [ $i3 -eq 5 ]; then
+     i7=`uname -m`
+     amd64=x86_64
+    if [ $i7 == "x86_64" ]; then
+     wget https://dl.google.com/linux/direct/google-chrome-unstable_current_amd64.deb
+     dpkg -i google-chrome-unstable*
+   else
+     echo " -Error : No Google Chrome for 32bit"
+   fi
+  fi
+  
+  if [ $i3 -eq 6 ]; then
+   sudo add-apt-repository ppa:libreoffice/ppa && sudo apt-get update && sudo apt-get install libreoffice
+  fi
+  
+   if [ $i3 -eq 7 ]; then
+    i7=`uname -m`
+    amd65=x86_64
+   if [ $i7 == "x86_64" ]; then
+    wget "https://github.com/oguzhaninan/Stacer/releases/download/v1.0.8/stacer_1.0.8_amd64.deb"
+    dpkg - i stacer*
+  else
+    echo " -Error : No Stacer for 32bit"
+  fi
+  fi
+  
+   if [ $i3 -eq 8 ]; then
+    i7=`uname -m`
+    amd64=x86_64
+   if [ $i7 == "x86_64" ];  then
+    wget -O - "http://mirror03.popcorntime.sh/repo/build/Popcorn-Time-0.3.10-Linux-64.tar.xz" | tar xzf -
+   else
+    wget -O - "http://mirror01.popcorntime.sh/build/Popcorn-Time-0.3.10-Linux-32.tar.xz" | tar xzf -
+   fi
+  fi
+  
+   if [ $i3 -eq 9 ]; then
+    i7=`uname -m`
+    amd64=x86_64
+   if [ $i7 == "x86_64" ]; then
+     wget -O - "https://www.torproject.org/dist/torbrowser/7.0.9/tor-browser-linux64-7.0.9_en-US.tar.xz" | tar xzf -
+   else
+     wget -O - "https://www.torproject.org/dist/torbrowser/7.0.9/tor-browser-linux32-7.0.9_en-US.tar.xz" | tar xzf -
+   fi
+  fi
+  
+   if [ $i3 -eq 10 ]; then
+      sudo add-apt-repository ppa:plushuang-tw/uget-stable && sudo apt update && sudo apt install uget
+  fi
+  
+  if [ $i3 -eq 11 ]; then
+  curl -s https://packagecloud.io/install/repositories/gyazo/gyazo-for-linux/script.deb.sh | sudo bash
+  sudo apt-get install gyazo
+  fi
+  
+  if [ $i3 -eq 12 ]; then
+  sudo add-apt-repository ppa:nilarimogard/webupd8
+  sudo apt update
+  sudo apt install youtube-dlg
+  fi
+  
+  if [ $i3 -eq 13 ]; then
+  sudo add-apt-repository ppa:deluge-team/ppa
+  sudo apt-get update
+  sudo apt-get install gyazo
+  fi
+  
+  if [ $i3 -eq 14 ]; then
+  wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -
+  echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sources.list.d/sublime-text.list
+  sudo apt-get update
+  sudo apt-get install sublime-text
+  fi
+  
+  if [ $i3 -eq 15 ]; then
+  sudo sh -c 'echo "deb http://repository.spotify.com/ stable non-free" > /etc/apt/sources.list.d/spotify.list'
+  sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 94558F59
+  sudo apt-get update
+  sudo apt-get install spotify-client
+  fi
+  
+  if [ $i3 -eq 16 ]; then
+  sudo add-apt-repository ppa:ubuntuhandbook1/audacity
+  sudo apt update
+  sudo apt install audacity
+  fi
+  if [ $i3 -eq 17 ]; then
+  wget -O - "http://bluegriffon.org/freshmeat/2.4.1/bluegriffon-2.4.1.Ubuntu16.04-x86_64.deb"
+  dpkg -i bluegriffon-*
+  fi
+  if [ $i3 -eq 18 ]; then
+  wget -O - "http://get.code-industry.net/public/master-pdf-editor-4.3.61_qt5.amd64.deb"
+  dpkg -i master-pdf-editor*
+  fi
+  if [ $13 -eq 19 ]; then
+   sudo add-apt-repository ppa:nathan-renniewaldock/flux
+   sudo apt-get update
+   sudo apt-get install fluxgui
+  fi
+  
+  if [ $i3 -eq 20 ]; then
+    i7=`uname -m`
+    amd64=x86_64
+   if [ $i7 == "x86_64" ]; then
+ wget -O - "https://github.com/gsantner/whatsie/releases/download/v2.1.0/whatsie-2.1.0-linux-amd64.deb"
+ dpkg -i whatsie-2.1.0-linux-amd64.deb
+   else
+     wget -O - "https://github.com/gsantner/whatsie/releases/download/v2.1.0/whatsie-2.1.0-linux-i386.deb"
+      dpkg -i whatsie-2.1.0-linux-i386.deb
+   fi
+  fi
+  
+  
+fi
+
+if [ $a1 -eq 2 ]; then
+ read -p "[-] Software Name : " i4
+ sudo apt-get install $i4
+fi
+
+Back
+fi
+
+if [ $i -eq 6 ]; then
+ dpkg -l
+ echo ""
+ read -p "[-] Software Name : " i2
+ sudo apt-get remove --purge $i2 && sudo apt-get autoremove
+ Back
+fi
+
+if [ $i -eq 7 ]; then
+echo " [-] Be aware this script have more then 30 themes do you want to install it ?"
+echo " [1] Yes."
+echo " [2] No. "
+read -p " [-] Operation Number : " i24
+
+if [ $i24 -eq 1 ]; then
+git clone https://github.com/tliron/install-gnome-themes ~/install-gnome-themes
+cd ~/install-gnome-themes
+./install-gnome-themes
+Back
+fi
+
+
+fi
+
+
+
+
+if [ $i -eq 09 ]; then
+  echo "[ Apt Eazy ]"
+  echo "This Tool Has Every Program and Command a New Linux User Need to Enjoy The Linux Experience."
+  echo "-Version   : 1.4.2 Beta [  ]"
+  echo "-CodeName  : Psycho"
+  echo "-Coded By  : Black.Hacker"
+  echo "-Owened By : Dark Software Company"
+  echo "© 2017 Dark Software All Rights Reserved."
+  echo "-This Tool is Not for Sell."
+  Back
+  fi
+
+
+if [ $i -eq 0 ]; then
+ echo ""
+ echo "[-] Good Luck (:"
+ exit
+fi
+
+if [ $i -eq 99 ]; then
+  echo ""
+ CheckUpdate
+ Back
+fi
+}
+
+
+function Back {
+	StartProject
+}
+
+function CheckPackage {
+PKG_OK=$(dpkg-query -W --showformat='${Status}\n' software-properties-common|grep "install ok installed")
+PKG_OK1=$(dpkg-query -W --showformat='${Status}\n' apt-transport-https|grep "install ok installed")
+PKG_OK2=$(dpkg-query -W --showformat='${Status}\n' git|grep "install ok installed")
+if [ "" == "$PKG_OK" ]; then
+ sudo apt-get install software-properties-common --yes
+ sudo apt-get install python-software-properties --yes
+fi
+
+if [ "" == "$PKG_OK1" ]; then
+sudo apt-get install apt-transport-https --yes
+fi
+
+if [ "" == "$PKG_OK2" ]; then
+sudo apt-get git--yes
+fi
+}
+
+CheckPackage
+sleep 1
+StartProject
