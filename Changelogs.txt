@@ -1,0 +1,16 @@
+Version 1.4.2 Beta
+[] New Programs Has Been Added
+  [] Gyazo [ Shutter Alternative ]
+  [] YouTube DL [ YouTube Downloader ]
+  [] Deluge [ Last Update - Torrent Clinet for Linux]
+  [] Sublime Text Editor
+  [] Spotify
+  [] Audacity
+  [] BlueGriffon [ Microsoft Expression Web Alternative ]
+  [] Master PDF Editor 4
+  [] f.lux 
+  [] Whatsie
+[] the tools will automatically check the requirements and install them
+[] About the tool
+[] Theme Installer has been added
+[] Update checker has been added
