@@ -41,6 +41,8 @@ and you can install
  
  First you need a debian based linux distribution.
  
+ One line installation
+ 
  `git clone https://github.com/BlackHacker511/Apt-Eazy.git && cd Apt-Eazy && chmod +x aptz && ./aptz`
  
  # How to use
