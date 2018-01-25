@@ -1,5 +1,5 @@
-/docs
-Version.txt
-Changelogs.txt
-README.md
-_config.yml
+docs/
+.Version.txt
+.Changelogs.txt
+.README.md
+._config.yml
