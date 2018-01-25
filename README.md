@@ -62,4 +62,4 @@ and you can install
  
  © 2018 Dark Software All Rights Reserved.
  
- This Tool Open Source and it's Not for Sell.
+ This tool is an Open Source and it's not for sale.
