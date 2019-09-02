@@ -4,14 +4,14 @@ echo "                  APT-Eazy                   "
 echo "[ ========================================= ]"
 echo "|                                           |"
 echo "| Coded By : Black.Hacker                   |"
-echo "| Version  : 1.5 Stable [ Psycho Edition ]  |"
-echo "| CodeName : AptGoPsycho                    |"
+echo "| Version  : 2.0 Stable [ 2019 Edition ]    |"
+echo "| CodeName : Its2019                        |"
 echo "|                                           |"
 echo "|           Dark Software Company           |"
 echo "[ ========================================= ]"
 
 function CheckUpdate {
-currentversion="1.5.Stable"
+currentversion="2.0.Stable"
 
 if [ -f "Version.txt" ]
 then
@@ -102,20 +102,14 @@ if [ $a1 -eq 1 ]; then
   echo " [4] Dropbox"
   echo " [5] Google Chrome"
   echo " [6] LibreOffice [ Last Update ]"
-  echo " [7] Stcer [ Ubuntu System Cleaner ]"
-  echo " [8] Popcorn Time"
-  echo " [9] Tor Browser"
-  echo " [10] uGet [ Internet Download Manager for Linux ]"
-  echo " [11] Gyazo [ Shutter Alternative ]"
-  echo " [12] YouTube DL [ YouTube Downloader ]"
-  echo " [13] Deluge [ Last Update - Torrent Clinet for Linux]"
-  echo " [14] Sublime Text Editor"
-  echo " [15] Spotify"
-  echo " [16] Audacity"
-  echo " [17] BlueGriffon [ Microsoft Expression Web Alternative ]"
-  echo " [18] Master PDF Editor 4"
-  echo " [19] f.lux "
-  echo " [20] Whatsie"
+  echo " [7] Stacer [ Ubuntu System Cleaner ]"
+  echo " [8] uGet [ Internet Download Manager for Linux ]"
+  echo " [9] Shuuter"
+  echo " [10] YouTube DL [ YouTube Downloader ]"
+  echo " [11] Deluge [ Last Update - Torrent Clinet for Linux]"
+  echo " [12] Sublime Text Editor"
+  echo " [13] Spotify"
+  echo " [14] Blue Griffon [ Last Update ][x64]"
   echo ""
   read -p " [-] Software Number : " i3
   
@@ -136,10 +130,10 @@ if [ $a1 -eq 1 ]; then
    i7=`uname -m`
    amd64=x86_64
   if [ $i7 == "x86_64" ]; then
-  sudo wget https://www.dropbox.com/download?dl=packages/ubuntu/dropbox_2015.10.28_amd64.deb
+  sudo wget https://www.dropbox.com/download?dl=packages/ubuntu/dropbox_2019.02.14_amd64.deb
    dpkg -i dropbox*
    else
-   sudo wget https://www.dropbox.com/download?dl=packages/ubuntu/dropbox_2015.10.28_i386.deb
+   sudo wget https://www.dropbox.com/download?dl=packages/ubuntu/dropbox_2019.02.14_i386.deb
    sudo dpkg -i dropbox*
    fi
   fi
@@ -148,7 +142,7 @@ if [ $a1 -eq 1 ]; then
      i7=`uname -m`
      amd64=x86_64
     if [ $i7 == "x86_64" ]; then
-     sudo wget https://dl.google.com/linux/direct/google-chrome-unstable_current_amd64.deb
+     sudo wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
     sudo dpkg -i google-chrome-unstable*
    else
      echo " -Error : No Google Chrome for 32bit"
@@ -159,104 +153,52 @@ if [ $a1 -eq 1 ]; then
    sudo add-apt-repository ppa:libreoffice/ppa && sudo apt-get update && sudo apt-get install libreoffice
   fi
   
+  
    if [ $i3 -eq 7 ]; then
-    i7=`uname -m`
-    amd65=x86_64
-   if [ $i7 == "x86_64" ]; then
-    sudo wget "https://github.com/oguzhaninan/Stacer/releases/download/v1.0.8/stacer_1.0.8_amd64.deb"
-    sudo dpkg - i stacer*
-  else
-    echo " -Error : No Stacer for 32bit"
-  fi
-  fi
-  
-   if [ $i3 -eq 8 ]; then
-    i7=`uname -m`
-    amd64=x86_64
-   if [ $i7 == "x86_64" ];  then
-    sudo wget "http://mirror03.popcorntime.sh/repo/build/Popcorn-Time-0.3.10-Linux-64.tar.xz" | sudo tar xzf -
-   else
-    sudo wget "http://mirror01.popcorntime.sh/build/Popcorn-Time-0.3.10-Linux-32.tar.xz" | sudo tar xzf -
-   fi
-  fi
-  
-   if [ $i3 -eq 9 ]; then
-    i7=`uname -m`
-    amd64=x86_64
-   if [ $i7 == "x86_64" ]; then
-    sudo wget "https://www.torproject.org/dist/torbrowser/7.0.9/tor-browser-linux64-7.0.9_en-US.tar.xz" | sudo tar xzf -
-   else
-    sudo wget "https://www.torproject.org/dist/torbrowser/7.0.9/tor-browser-linux32-7.0.9_en-US.tar.xz" | sudo tar xzf -
-   fi
-  fi
-  
-   if [ $i3 -eq 10 ]; then
       sudo add-apt-repository ppa:plushuang-tw/uget-stable && sudo apt update && sudo apt install uget
   fi
   
-  if [ $i3 -eq 11 ]; then
-  curl -s https://packagecloud.io/install/repositories/gyazo/gyazo-for-linux/script.deb.sh | sudo bash
-  sudo apt-get install gyazo
+  if [ $i3 -eq 8 ]; then
+  sudo apt-get install shutter
   fi
   
-  if [ $i3 -eq 12 ]; then
+  if [ $i3 -eq 9 ]; then
   sudo add-apt-repository ppa:nilarimogard/webupd8
   sudo apt update
   sudo apt install youtube-dlg
   fi
   
-  if [ $i3 -eq 13 ]; then
+  if [ $i3 -eq 10 ]; then
   sudo add-apt-repository ppa:deluge-team/ppa
   sudo apt-get update
-  sudo apt-get install gyazo
+  sudo apt-get install deluge
   fi
   
-  if [ $i3 -eq 14 ]; then
+  if [ $i3 -eq 11 ]; then
   wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -
   echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sources.list.d/sublime-text.list
   sudo apt-get update
   sudo apt-get install sublime-text
   fi
   
-  if [ $i3 -eq 15 ]; then
+  if [ $i3 -eq 12 ]; then
   sudo sh -c 'echo "deb http://repository.spotify.com/ stable non-free" > /etc/apt/sources.list.d/spotify.list'
   sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 94558F59
   sudo apt-get update
   sudo apt-get install spotify-client
   fi
   
-  if [ $i3 -eq 16 ]; then
+  if [ $i3 -eq 13 ]; then
   sudo add-apt-repository ppa:ubuntuhandbook1/audacity
   sudo apt update
   sudo apt install audacity
   fi
-  if [ $i3 -eq 17 ]; then
-  sudo wget "http://bluegriffon.org/freshmeat/2.4.1/bluegriffon-2.4.1.Ubuntu16.04-x86_64.deb"
+
+  if [ $i3 -eq 14 ]; then
+  sudo wget "http://bluegriffon.org/freshmeat/3.0.1/bluegriffon-3.0.1.Ubuntu16.04-x86_64.deb"
   sudo dpkg -i bluegriffon-*
   fi
-  if [ $i3 -eq 18 ]; then
- sudo  wget "http://get.code-industry.net/public/master-pdf-editor-4.3.61_qt5.amd64.deb"
- sudo dpkg -i master-pdf-editor*
-  fi
-  if [ $13 -eq 19 ]; then
-   sudo add-apt-repository ppa:nathan-renniewaldock/flux
-   sudo apt-get update
-   sudo apt-get install fluxgui
-  fi
-  
-  if [ $i3 -eq 20 ]; then
-    i7=`uname -m`
-    amd64=x86_64
-   if [ $i7 == "x86_64" ]; then
- sudo wget "https://github.com/gsantner/whatsie/releases/download/v2.1.0/whatsie-2.1.0-linux-amd64.deb"
- sudo dpkg -i whatsie-2.1.0-linux-amd64.deb
-   else
-     sudo wget "https://github.com/gsantner/whatsie/releases/download/v2.1.0/whatsie-2.1.0-linux-i386.deb"
-    sudo dpkg -i whatsie-2.1.0-linux-i386.deb
-   fi
-  fi
-  
-  
+
 fi
 
 if [ $a1 -eq 2 ]; then
