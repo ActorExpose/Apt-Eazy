@@ -22,20 +22,14 @@ and you can install
  4. Dropbox
  5. Google Chrome
  6. LibreOffice
- 7. Stcer
- 8. Popcorn Time
- 9. Tor Browser
- 10. uGet
- 11. Gyazo
- 12. YouTube DL
- 13. Deluge
- 14. Sublime Text Editor
- 15. Spotify
- 16. Audacity
- 17. BlueGriffon
- 18. Master PDF Editor 4
- 18. f.lux 
- 20. Whatsie
+ 7. Stacer
+ 8. uGet
+ 9. Gyazo
+ 10. YouTube DL
+ 11. Deluge
+ 12. Sublime Text Editor
+ 13. Spotify
+ 14. BlueGriffon
  
  # How to install
  
